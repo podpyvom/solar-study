@@ -1,0 +1,15 @@
+{
+  "name": "solar-study",
+  "version": "1.0.0",
+  "main": "src/index.js",
+  "scripts": {
+    "start": "node src/index.js"
+  },
+  "dependencies": {
+    "express": "^4.18.2",
+    "telegraf": "^4.12.2",
+    "multer": "^1.4.5-lts.1",
+    "mammoth": "^1.4.21",
+    "string-similarity": "^4.0.4"
+  }
+}

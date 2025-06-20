@@ -1,3 +1,0 @@
-Flask
-aiogram
-python-docx
