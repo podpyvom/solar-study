@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <title>Поиск</title>
+    <link rel="stylesheet" href="/static/css/style.css">
+    <script src="/static/js/app.js" defer></script>
+</head>
+<body class="light">
+<div class="theme-toggle" onclick="toggleTheme()">
+    <span id="theme-icon">\u2600\uFE0F</span>
+</div>
+<div class="center">
+    <button class="back" onclick="navigate('/menu')">Назад</button>
+    <h2>Поиск файлов</h2>
+    <input type="text" id="search-text" placeholder="Поиск по тексту">
+    <input type="text" id="search-subject" placeholder="Предмет">
+    <input type="text" id="search-course" placeholder="Курс">
+    <button onclick="doSearch()">Найти</button>
+    <ul id="results"></ul>
+</div>
+</body>
+</html>

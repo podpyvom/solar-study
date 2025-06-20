@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <title>Загрузка</title>
+    <link rel="stylesheet" href="/static/css/style.css">
+    <script src="/static/js/app.js" defer></script>
+</head>
+<body class="light">
+<div class="theme-toggle" onclick="toggleTheme()">
+    <span id="theme-icon">\u2600\uFE0F</span>
+</div>
+<div class="center">
+    <button class="back" onclick="navigate('/menu')">Назад</button>
+    <h2>Загрузка файлов</h2>
+    <form id="upload-form">
+        <input type="file" name="file" id="file-input" required>
+        <input type="text" name="teacher" placeholder="Преподаватель" required>
+        <input type="text" name="university" placeholder="Университет" required>
+        <input type="text" name="course" placeholder="Курс" required>
+        <input type="text" name="subject" placeholder="Предмет" required>
+        <input type="text" name="final_name" placeholder="Название итогового файла" required>
+        <button type="submit">Загрузить</button>
+    </form>
+    <div id="upload-result"></div>
+</div>
+</body>
+</html>

@@ -1,0 +1,54 @@
+body {
+    font-family: Arial, sans-serif;
+    text-align: center;
+    transition: background 0.5s, color 0.5s;
+}
+body.dark {
+    background: #1e1e1e;
+    color: #eee;
+}
+body.light {
+    background: #fff;
+    color: #333;
+}
+.theme-toggle {
+    position: fixed;
+    top: 10px;
+    right: 10px;
+    cursor: pointer;
+    font-size: 24px;
+    z-index: 1000;
+}
+.center {
+    margin-top: 100px;
+}
+button {
+    margin: 5px;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    background: #007aff;
+    color: white;
+    cursor: pointer;
+}
+button.back {
+    position: absolute;
+    left: 10px;
+    top: 10px;
+    background: #ccc;
+    color: #333;
+}
+input[type="text"], input[type="file"] {
+    display: block;
+    margin: 10px auto;
+    padding: 10px;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+}
+.animate-text {
+    animation: fade 2s infinite alternate;
+}
+@keyframes fade {
+    from { opacity: 0.2; }
+    to { opacity: 1; }
+}
