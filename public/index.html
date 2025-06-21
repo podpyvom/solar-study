@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="UTF-8">
+  <title>Solar Study</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body class="light">
+  <div id="welcome" class="page">
+    <h1 id="title">Solar Study</h1>
+    <p>By clicking 'Continue,' you accept the <a href="UserAgreement.txt" target="_blank">User Agreement</a> and <a href="PrivacyPolicy.txt" target="_blank">Privacy Policy</a>.</p>
+    <button onclick="showMenu()">Continue</button>
+  </div>
+
+  <div id="menu" class="page hidden">
+    <button onclick="showPage('search')">File Search</button>
+    <button onclick="showPage('upload')">File Upload</button>
+    <button onclick="showPage('myfiles')">My Files</button>
+    <button id="themeToggle" onclick="toggleTheme()">🌞</button>
+  </div>
+
+  <div id="search" class="page hidden">
+    <button onclick="showMenu()">Back</button>
+    <h2>Search</h2>
+    <input id="sSubject" placeholder="Subject" />
+    <input id="sCourse" placeholder="Course" />
+    <input id="sUniversity" placeholder="University" />
+    <input id="sInstructor" placeholder="Instructor" />
+    <input id="sText" placeholder="Text" />
+    <button onclick="search()">Search</button>
+    <ul id="results"></ul>
+  </div>
+
+  <div id="upload" class="page hidden">
+    <button onclick="showMenu()">Back</button>
+    <h2>Upload</h2>
+    <input id="uUniversity" placeholder="University" />
+    <input id="uInstructor" placeholder="Instructor" />
+    <input id="uCourse" placeholder="Course" />
+    <input id="uSubject" placeholder="Subject" />
+    <input id="uFinal" placeholder="Final File Name" />
+    <input id="files" type="file" multiple />
+    <select id="visibility">
+      <option value="public">Public</option>
+      <option value="private">Private</option>
+    </select>
+    <button onclick="uploadFiles()">Save</button>
+    <p id="uploadMsg"></p>
+  </div>
+
+  <div id="myfiles" class="page hidden">
+    <button onclick="showMenu()">Back</button>
+    <h2>My Files</h2>
+    <ul id="fileList"></ul>
+  </div>
+
+<script src="app.js"></script>
+</body>
+</html>
