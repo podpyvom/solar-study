@@ -1,0 +1,11 @@
+body {
+  font-family: sans-serif;
+  transition: background-color 0.3s;
+}
+body.dark {
+  background-color: #222;
+  color: white;
+}
+.page.hidden { display: none; }
+button { margin: 5px; padding: 10px; }
+input, select { margin: 5px; padding: 8px; }
